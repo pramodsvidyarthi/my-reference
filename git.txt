@@ -1,0 +1,16 @@
+pull - keep my local copy upto date wit remote copy.(will change files in the current branch and working copy of code).(fetch + merge = pull)
+
+fetch - bring oly the changes and i still get to keep my own code.(used to tell if there is any changes in the remote since the last pull u made). Better todo fetch before pull.
+
+branch- created locally work on it ip approved merge it wit the master branch and delete it.
+checkout  - create a branch and enter into it.
+merge - merge to branches.
+
+Head - means the local copy and is a pointer which points to the working branch.
+
+git diff --stat --color master..branch_name (remember to add and commit).
+
+snapshot - use archive, git checkout-index commands.
+
+*) make a branch and make ur changes,pull the lastest code merge the branch to master and push master.
+

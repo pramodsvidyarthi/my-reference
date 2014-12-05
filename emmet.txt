@@ -1,0 +1,7 @@
+for attributes use [] (square brackets).
+ eg: input[type="text"]
+
+for inserting text use {} (curly braces).
+ eg: ul>li{items}*3
+
+check this link for more : http://docs.emmet.io/abbreviations/syntax/

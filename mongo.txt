@@ -1,0 +1,29 @@
+use dbname - create a database(but will take action oly wen u insert data into it).
+
+db.collectionname.insert(object/array) - to insert data.
+
+db.collectionname.find({query here}).pretty() - to show records.
+
+show dbs - list all the databases.
+
+show collections - list of all collections (more help in this link http://docs.mongodb.org/manual/reference/mongo-shell/).
+
+db.
+dropDatabase() - delete a database.
+db.collectionname.drop() - delete a collection.
+
+
+mongod --dbpath D:\node\nodetest2\data (from the mongo folder to the path where u want the db to reside may be some folder in the express folder).
+
+mongo - to run the service.
+
+db.collectionname.stats() - give the statistics.
+
+db.collectionname.copyTo(newcollectionname)
+
+limit(num),skip(num),sort(keyname:1/0),ensureIndex()
+
+map,reduce for datamining.
+
+ORM client mongoose, monk etc... some links for help (http://nosql.mypopescu.com/kb/nosql)
+ 						     (http://nosql-database.org/)

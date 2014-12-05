@@ -1,0 +1,42 @@
+Its a key-value pair db not a relational or document based db.
+
+set - to insert new children into the db, can nest upto 32 levels. if EXISTS will OVERWRITE.
+
+post - generate a uniqueid for each object we wish to create.
+
+use best practices of logging errors .
+
+use orderByChild before using startAt and endAt thats wen the query runs successfully else returns null.
+
+use orderByChild, to order the children and orderByKey to order upon the keys. Also setWithPriority to set priority.
+
+priority is used to provide a custom ordering for the children at a location (if no priorities are specified, the children are ordered by name). 
+
+documentation is good be patient and analyze and understand well..
+
+vvimp: If no orderBy is used before startAt or endAt it will not show up.
+
+ key : value
+(key)  (children)
+
+
+orderByKey must have a argument i.e name (below john and derrick) if they have to be chained with startAt and endAt. else can use orderBykey without startAt and endAt.
+eg:  'john':{
+	 appeared: 
+	 height: 
+	 length: 
+	 order: 
+	 vanished: 
+	 weight: 
+     },
+     'derrick':{
+	 appeared: 
+	 height: 
+	 length: 
+	 order: 
+	 vanished: 
+	 weight: 
+     }
+
+
+

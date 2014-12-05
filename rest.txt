@@ -1,0 +1,18 @@
+- In post man testing the rest api do not put application/json in quotes. AVOID IT (VV imp else it wont work).
+
+- Use the restify and the save or nedb. ( http://synthmedia.co.uk/blog/basic-nodejs-api-with-restify-and-save#.VE4tX_mSx1Y ).
+
+- careful wit the key or property name (i.e giving them as string).
+
+- and while getting the id from params it ll be in string convert to num using parseInt.
+
+- nouns(get, post, put, delete etc).
+
+- verbs(status code, they are action like 200,204,404,301,...etc). refer this link below
+	(http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html).
+	series 200 - success.
+	series 300 - redirection.
+	series 400 - client side errors.
+	series 500 - server side errors.
+
+- (out of the context NOTE: quirks mode is fall back by modern browsers for supporting sum webpages    	  designed for older versions of the web browsers).
