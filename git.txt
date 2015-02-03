@@ -1,3 +1,9 @@
+git init first.
+
+git config user.name "name" same goes with user.email. Verify using git config user.name/email.
+
+git add then commit then remote add origin. pull first to keep the head same and then push to the repo.
+
 pull - keep my local copy upto date wit remote copy.(will change files in the current branch and working copy of code).(fetch + merge = pull)
 
 fetch - bring oly the changes and i still get to keep my own code.(used to tell if there is any changes in the remote since the last pull u made). Better todo fetch before pull.
