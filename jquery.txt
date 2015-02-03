@@ -1,0 +1,10 @@
+scrollwidth, clientwidth - cant be foun using jquery, can be done using doc.getEleme... using jquery use get method and then the property name
+
+end - returns to the starting point in a chained methods
+
+empty, remove, detach
+
+get()- returns array takes an integer as a parameter and return the dom ele at that index.
+
+queue and dequeue for delaying or to perform FIFO operations
+

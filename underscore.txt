@@ -1,0 +1,75 @@
+ // use toJSON method to convert collection to aaray
+            //var arr = this.collection.toJSON();
+            //var data = _.map(arr, function (model) {
+            //    return _.pick(model, propertyname);
+            //});
+
+            //console.log(_.uniq(data));
+            //if (typeof String.prototype.startsWith != 'function') {
+            //    // see below for better implementation!
+            //    String.prototype.startsWith = function (str) {
+            //        return this.indexOf(str) == 0;
+            //    };
+            //} have to add this method
+            //var dummy =  new Backbone.Collection(data);
+            //dummy.each(function (model) {
+            //    var ele = new xc.ui.filteronlist({ model: model });
+            //    $('#selectlist').append(ele.el);
+            //});
+
+
+
+
+"abc".split('')[0];
+
+ _.filter(arr, function (model) {
+                return model.indexOf('a') == 0;
+            });
+
+
+html() and append() makes a lot of diff use as per the view need html removes and adds new content where as append jus attaches to the end of the
+element.
+
+detach() - If you want to remove elements without destroying their data or event handlers (so they can be re-added later), use detach().
+
+empty() - removes the children and the text inside each element and as well destroys the events and event handlers and data.
+
+*************************
+diff btw empty and remove
+*************************
+they both are the same, both destroys data and associated events except that remove method removes the element itself whereas the empty removes only the children and wont delete/remove itself from the dom.
+
+
+
+
+/////////////////////////
+    multiple filters
+////////////////////////
+
+var abc = function(){
+var result;
+ var query = {
+ clientName:['ABC Company','Able,Jake ','A&A CO.']
+// clientAccountNumber:['9876541','12345']
+}
+_.each(query, function(val, key, list){
+ if(_.isArray(val)){
+   result = _.filter(data, function(a,b ){
+       if(_.contains(val,a[key]) ){
+        return a
+      }
+    });
+  }
+})
+return result;
+}
+
+**********************
+    string search
+**********************
+
+string.search(RegExp(str, 'i') === 0)  // checks if the first letter is the regular expression
+string.search(RegExp(str, 'i') !== -1)  // checks if the regular expression is found any where 						   in the string.(fizzy searching).
+0,1,2 ar all indexes or the indexof the str in the string.
+
+string.replace to replace a letter or a string with another. replace the searched letter within a tag so that it highlights(make it bold or italic or give a color).

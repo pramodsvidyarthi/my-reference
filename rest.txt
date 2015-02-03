@@ -16,3 +16,8 @@
 	series 500 - server side errors.
 
 - (out of the context NOTE: quirks mode is fall back by modern browsers for supporting sum webpages    	  designed for older versions of the web browsers).
+
+- escape character mean wen i have string inside string the interpreter doesn noes wer the string ends.
+  soln 1) to used double quote inside single quote 
+			(or)
+  soln 2) to use an escape character to escape the quotes.
