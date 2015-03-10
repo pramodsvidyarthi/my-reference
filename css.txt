@@ -1,5 +1,5 @@
 for the long text to expand with a (...)
-use text-overflow: ellipse and do give the element a width (or) max-width and overflow:hidden and whitespace:no-wrap.
+use text-overflow: ellipse and do give the element a width (or) max-width and overflow:hidden and whitespace:no-wrap(makes all text be in one line oly).
 
 
 

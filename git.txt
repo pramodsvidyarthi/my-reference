@@ -20,3 +20,7 @@ snapshot - use archive, git checkout-index commands.
 
 *) make a branch and make ur changes,pull the lastest code merge the branch to master and push master.
 
+
+git diff master origin/master (see the difference of localmaster and origin master).
+
+

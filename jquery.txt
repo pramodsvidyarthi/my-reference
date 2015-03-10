@@ -1,10 +1,20 @@
 scrollwidth, clientwidth - cant be foun using jquery, can be done using doc.getEleme... using jquery use get method and then the property name
 
-end - returns to the starting point in a chained methods
+end() - returns to the starting point in a chained methods
 
 empty, remove, detach
 
 get()- returns array takes an integer as a parameter and return the dom ele at that index.
 
-queue and dequeue for delaying or to perform FIFO operations
+queue and dequeue for delaying or to perform FIFO operations,
 
+closest - starting from the element itself, goes up the dom tree lookin for the selector provided and stops on its occurance.
+
+parents - same as above returns all ancestors of the element til the starting of dom
+
+bind X unbind
+live X die
+on X off
+
+offset - position from the body i.e top and left position of the element from the body
+position - position of the element its relative to (or) position of the element from its relative parent.
