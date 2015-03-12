@@ -1,0 +1,57 @@
+The month number is a array and the index varies while getting the lastdate and other date i.e index is 
+sometimes one more than the actual index while getting the lastdate.
+*******************************************************************************************************
+
+
+//generates dates for the passed in month and next month
+
+var printDates = function(monthnumber){
+ for(var i=monthnumber; i<=monthnumber+1; i++){
+ switch(i) {
+  case monthnumber: (function(){ 
+          var lstdate = new Date(2012,monthnumber,0).getDate();
+          for(var j=1; j<=lstdate ; j++){
+            console.log(j);
+           }
+          })();
+          break;
+  case monthnumber+1: (function(){ 
+          var lstdate = new Date(2012,monthnumber+1,0).getDate();
+          for(var j=1; j<=lstdate; j++){
+           console.log(j);
+          }
+          })();
+          break;
+  }
+ }
+}
+
+
+//print dates of all the months in the given year with monthname
+
+
+var printyearDates = function(yr){
+var month = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
+ for (var i=1; i<=12; i++){
+   var lst = new Date(yr,i,0).getDate();
+   for(var j=1; j<=lst; j++){
+      console.log(month[i-1]+"-"+j);
+   }
+ }
+}
+
+
+
+//print dates of all the months in the given year with dayname and monthname
+
+var printyearDates = function(yr){
+var month = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
+var day = ['sun','mon','tue','wed','thu','fri','sat'];
+ for (var i=1; i<=12; i++){
+   var lst = new Date(yr,i,0).getDate();
+   for(var j=1; j<=lst; j++){
+      var weeknum = new Date(yr,i-1,j).getDay();
+      console.log(month[i-1]+"-"+j+"-"+day[weeknum]);
+   }
+ }
+}

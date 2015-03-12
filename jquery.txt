@@ -18,3 +18,17 @@ on X off
 
 offset - position from the body i.e top and left position of the element from the body
 position - position of the element its relative to (or) position of the element from its relative parent.
+
+
+
+$('input[id*="201"]') - searches for the text 201 anywhere in the id name which is a string.
+$('input[id^="1"]') -  searches for the ones which startswith 1 in the id name which is a string.
+
+//date object
+
+to get first day on month new Date(yr,m,1).getDate() - in this case month will be 0-jan, 1-feb.
+to get last date of month new Date(yr,m,0).getDate() - in this case month will be 1-jan, 2-feb.
+
+console.time and console.timeEnd methods log from and to time of execution of anything.
+console.table pass an array or object as parameter and it logs as a table neat way for debugging.
+console.group for group logging.
