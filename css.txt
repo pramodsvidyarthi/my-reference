@@ -27,4 +27,12 @@ use text-overflow: ellipse and do give the element a width (or) max-width and ov
 }
 
 
- offset returns position as per document where as position returns as per relative parent. or other way round
+ offset returns position as per document where as position returns as per relative parent. or other way round.
+
+
+* -  all; (astric)
+^ - startswith in a string. (caret)
+$ - ends with in a string. (dollar)
+~ - not strict checks for any adjacent node (tilda). ul ~ p.
++ - stric, checks for only first adjacent node. ul + p.
+

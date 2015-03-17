@@ -1,3 +1,13 @@
+***************************
+ Java Script dynamic script
+***************************
+
+inserting a script tag by document.createElement and then you can add the type as 'txt/js' and then give the src and append
+to dom using document.appendChild and then eval() with the param as the tag this will force it to run the script.
+                                             (or)
+new instance of XHR and open with get request to url and the script tag text as the response.
+
+**********************************************************************************************************************************************
 scrollwidth, clientwidth - cant be foun using jquery, can be done using doc.getEleme... using jquery use get method and then the property name
 
 end() - returns to the starting point in a chained methods

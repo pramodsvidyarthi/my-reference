@@ -2,6 +2,10 @@ The month number is a array and the index varies while getting the lastdate and 
 sometimes one more than the actual index while getting the lastdate.
 *******************************************************************************************************
 
+1000ms * 60 = 1min * 60 = 1hr * 24 = 1day.
+
+1day = 86400000 milliseconds.
+
 
 //generates dates for the passed in month and next month
 
@@ -55,3 +59,13 @@ var day = ['sun','mon','tue','wed','thu','fri','sat'];
    }
  }
 }
+
+
+
+//print week number
+
+
+ Date.prototype.getWeek = function() {
+        var onejan = new Date(this.getFullYear(), 0, 1);
+        return Math.ceil((((this - onejan) / 86400000) + onejan.getDay() + 1) / 7);
+    }
