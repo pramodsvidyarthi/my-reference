@@ -3,6 +3,7 @@ sometimes one more than the actual index while getting the lastdate.
 *******************************************************************************************************
 
 1000ms * 60 = 1min * 60 = 1hr * 24 = 1day.
+1sec * 60 = 1min * 60 = 1hr * 24 = 1 day.
 
 1day = 86400000 milliseconds.
 
@@ -69,3 +70,42 @@ var day = ['sun','mon','tue','wed','thu','fri','sat'];
         var onejan = new Date(this.getFullYear(), 0, 1);
         return Math.ceil((((this - onejan) / 86400000) + onejan.getDay() + 1) / 7);
     }
+
+
+***************************
+*  complete year details  *
+***************************
+
+
+var yearDetails = function(yr){
+var month = "jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec".split(","),
+    days = "sun mon tue we thu fri sat".split(" "), totalweeks,
+    firstdayofYear = new Date(yr,0,1), 
+    lastdayofYear = new Date(yr,12,0),arr = [];
+
+  var totaldays = ((lastdayofYear - firstdayofYear) / 86400000) + 1;
+  totalweeks = Math.ceil(totaldays / 7);
+  
+  for (var i=0; i<month.length; i++){
+   var name = {}, strtdte = dt = new Date(yr, i, 1),enddte = new Date(yr, i+1, 0);
+   name.monthname = month[i];
+   name.startdate = strtdte .getDate();
+   name.enddate = enddte.getDate();
+   name.numofweeks = name.enddate % 7 === 0 ? '4'  : '5';
+   dt = new Date(yr,i,dt.getDate()+6), counter = 1;
+   name.weeks = {}, name.weeks["week"+counter] = [];
+
+   for(var j=1; j<= enddte.getDate(); j++){       
+       if(j%7 === 0){
+        name.weeks["week"+counter].push(j+"-"+month[i]+"-"+days[new Date(yr,i,j).getDay()]);
+        counter+=1;
+        name.weeks["week"+counter] = [];
+       } else {
+        name.weeks["week"+counter].push(j+"-"+month[i]+"-"+days[new Date(yr,i,j).getDay()]);
+      }
+     }
+
+   arr.push(name);
+  }
+ return arr;
+}
