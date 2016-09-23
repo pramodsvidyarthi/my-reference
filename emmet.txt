@@ -12,4 +12,5 @@ cgn
 vetrical,right{above/below} sb buffernumber
 bd buffernumber - buffer delete
 :noh - highlight disable
+ve-pretty much as the below command 
 vaw,vai, [ci,ca - till the symbol, i is inner and a is outer]
